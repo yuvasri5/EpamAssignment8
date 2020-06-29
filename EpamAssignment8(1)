@@ -1,0 +1,19 @@
+package com.epam.jdd_demo;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class deleteFirst2AcharsTest {
+
+	@Test
+	public void testString() {
+		assertEquals("BCD",deleteFirst2Achars.subString("ABCD"));
+		assertEquals("CD",deleteFirst2Achars.subString("AACD"));
+		assertEquals("BCD",deleteFirst2Achars.subString("BACD"));
+		assertEquals("BBAA",deleteFirst2Achars.subString("BBAA"));
+		assertEquals("BAA",deleteFirst2Achars.subString("AABAA"));
+		
+	}
+
+}
