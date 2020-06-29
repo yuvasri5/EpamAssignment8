@@ -1,0 +1,18 @@
+package com.epam.jdd_demo;
+
+public class deleteFirst2Achars {
+
+	public static String subString(String string) {
+		String str = "";
+		if(string.charAt(0) != 'A') {
+			str += string.charAt(0);
+		}
+		if(string.charAt(1) != 'A') {
+			str += string.charAt(1);
+		}
+		for(int i = 2;i<string.length();i++) {
+			str += string.charAt(i);
+		}
+		return  str;
+	}
+}
